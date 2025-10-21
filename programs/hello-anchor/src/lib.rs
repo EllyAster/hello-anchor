@@ -6,8 +6,10 @@ declare_id!("Bpn8fqtx7rf2YypAfYtrZPFcUboqccy8krZ6GJrzRTas");
 pub mod hello_anchor {
     use super::*;
 
+
+
     pub fn initialize(ctx: Context<Initialize>) -> Result<()> {
-        msg!("Greetings from: {:?}", ctx.program_id);
+        msg!("Hello: {:?}", ctx.program_id);
         Ok(())
     }
 }
